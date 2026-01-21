@@ -2,7 +2,7 @@
 [![View Repositories](https://img.shields.io/badge/View-My_Repositories-blue?logo=GitHub)](https://github.com/mrafraim?tab=repositories)
 [![View My Profile](https://img.shields.io/badge/View-My_Profile-green?logo=GitHub)](https://github.com/mrafraim) 
 
-# Customer Churn Prediction Project
+# Telco Customer Churn: Analysis & Prediction
 
 ## Project Overview
 
