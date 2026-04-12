@@ -20,13 +20,11 @@ Telecommunications
 ### **Dataset Size**
 Records - 7,043 | Features - 21
 
----
 
 ## Data Understanding
 - Dataset: 7043 customer records, 27 features.
 - Features include demographic info, contract type, internet service, payment method, tenure, charges, and derived features like `AvgChargePerMonth` and `TenureGroup`.
 
----
 
 ## Data Preparation
 - Encoding of categorical features completed.
@@ -34,7 +32,6 @@ Records - 7,043 | Features - 21
 - Features for tree-based models: `tenure`, `MonthlyCharges`, `TotalCharges`, categorical features; `AvgChargePerMonth` optional.
 - Missing values and outliers handled.
 
----
 
 ## Exploratory Data Analysis (EDA)
 - Visual analysis of churn across tenure, gender, contract types, internet service, payment methods, and monthly charges.
@@ -44,7 +41,6 @@ Records - 7,043 | Features - 21
 ![gender_group](images/gender_group.png)
 ![churn_tenure_senior](images/churn_tenure_senior.png)
 ![contract_type](images/contract_type.png)
----
 
 ## Statistical & Diagnostic Analysis
 statistical validation and diagnostic checks to ensure data quality and model readiness
@@ -53,7 +49,6 @@ statistical validation and diagnostic checks to ensure data quality and model re
 ![dist_monthlycharge](images/dist_monthlycharge.png)
 ![dist_totalcharge](images/dist_totalcharge.png)
 
----
 
 ## Predictive Modeling
 - Models evaluated: Logistic Regression, KNN, Random Forest, XGBoost, LightGBM.
@@ -61,7 +56,6 @@ statistical validation and diagnostic checks to ensure data quality and model re
 
 ![before_tune_result](images/before_tune_result.png)
 
----
 
 ## Hyperparameter Tuning & Model Optimization
 - Two-phase approach:
@@ -75,7 +69,6 @@ statistical validation and diagnostic checks to ensure data quality and model re
 
 ![after_tune_result](images/after_tune_result.png)
 
----
 
 ## Final Model Evaluation
 - **Best Model (business-aligned): Tuned LightGBM**
@@ -84,7 +77,6 @@ statistical validation and diagnostic checks to ensure data quality and model re
   - `Contract_Two year`, `tenure`, `InternetService_Fiber optic`, `MonthlyCharges`, `Contract_One year`, `PaymentMethod_Electronic check` as key drivers.
 - Threshold analysis shows optimal cutoff at 0.45, balancing precision and recall.
 
----
 
 ## Recommendations
 
@@ -104,8 +96,14 @@ statistical validation and diagnostic checks to ensure data quality and model re
    - Multi-objective optimization balancing PR-AUC vs cost-sensitive metrics
    - Ensemble-level tuning (stacked or hybrid models)
    - Hyperband / Successive Halving for larger search spaces
----
 
 ## Conclusion
 
 This project demonstrates a complete churn prediction workflow on the Telco dataset, from data understanding and preprocessing to model building, tuning, and evaluation. Tree-based models, particularly tuned LightGBM, show the best balance between recall and PR-AUC, aligning with real-world business priorities of minimizing missed churners. Feature importance and SHAP analysis highlight key drivers like contract type, tenure, and internet service, providing actionable insights for business strategy. Future improvements, including advanced hyperparameter tuning and ensemble approaches, can further enhance predictive performance and robustness.
+
+---
+
+<p style="text-align:center; color:skyblue; font-size:18px;">
+© 2026 Mostafizur Rahman
+</p>
+
